@@ -1,1 +1,112 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+}
+.nuevaCarta {
+  margin-top: 5%;
+  margin-left: 45%;
+  padding: 3%;
+}
+.medidas {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  font-weight: bold;
+}
+.medidas > * {
+  margin-left: 10px;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  text-align: center;
+}
+
+.card.heart:before {
+  content: "♥";
+  color: red;
+  font-size: 36px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+.card.heart:after {
+  content: "♥";
+  color: red;
+  font-size: 36px;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  transform: rotate(180deg);
+}
+
+.card.spade:before {
+  content: "♠";
+  color: black;
+  font-size: 36px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+.card.spade:after {
+  content: "♠";
+  color: black;
+  font-size: 36px;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  transform: rotate(180deg);
+}
+
+.card.club:before {
+  content: "♣";
+  color: black;
+  font-size: 36px;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  transform: rotate(180deg);
+}
+.card.club:after {
+  content: "♣";
+  color: black;
+  font-size: 36px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+
+.card.diamond:before {
+  content: "♦";
+  color: red;
+  font-size: 36px;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  transform: rotate(180deg);
+}
+
+.card.diamond:after {
+  content: "♦";
+  color: red;
+  font-size: 36px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+
+.card .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8vh;
+}
