@@ -1,18 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
-body {
-  background-color: green;
-}
-.nuevaCarta {
-  margin-top: 5%;
-  margin-left: 45%;
-  padding: 3%;
-}
-.medidas {
-  display: flex;
-  justify-content: center;
-  margin-top: 5%;
-  font-weight: bold;
-}
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 .medidas > * {
   margin-left: 10px;
 }
